@@ -1,5 +1,5 @@
 {
-    "name": "blog_admin",
+    "name": "blog-admin",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
@@ -13,6 +13,7 @@
         "babel-plugin-named-asset-import": "^0.2.3",
         "babel-preset-react-app": "^6.1.0",
         "bfj": "6.1.1",
+        "braft-editor": "^2.1.35",
         "case-sensitive-paths-webpack-plugin": "2.1.2",
         "chalk": "2.4.1",
         "css-loader": "1.0.0",
@@ -58,6 +59,7 @@
         "workbox-webpack-plugin": "3.6.3"
     },
     "scripts": {
+        "cusPublish": "scp -r build root@47.98.113.53:/usr/share/nginx",
         "start": "node scripts/start.js",
         "build": "node scripts/build.js",
         "test": "node scripts/test.js"
@@ -68,7 +70,7 @@
     "browserslist": [
         ">0.2%",
         "not dead",
-        "not ie <= 11",
+        "not ie <= 9",
         "not op_mini all"
     ],
     "jest": {
